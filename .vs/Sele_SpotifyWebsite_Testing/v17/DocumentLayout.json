@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|d:\\test_spotifywebsite\\sele_spotifywebsite_testing\\sele_spotifywebsite_testing\\test_loginspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|solutionrelative:sele_spotifywebsite_testing\\test_loginspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test_LoginSpotify_Nam.cs",
+              "DocumentMoniker": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
+              "RelativeDocumentMoniker": "Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
+              "ToolTip": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
+              "RelativeToolTip": "Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
+              "ViewState": "AQIAAHABAAAAAAAAAAAAAJABAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T15:18:59.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
