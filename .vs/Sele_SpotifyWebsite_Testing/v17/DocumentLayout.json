@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\",
+  "WorkspaceRootPath": "D:\\Sele_SpotifyWebsite_Testing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|d:\\test_spotifywebsite\\sele_spotifywebsite_testing\\sele_spotifywebsite_testing\\test_loginspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|solutionrelative:sele_spotifywebsite_testing\\test_loginspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|d:\\sele_spotifywebsite_testing\\sele_spotifywebsite_testing\\test_signupspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|solutionrelative:sele_spotifywebsite_testing\\test_signupspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|d:\\sele_spotifywebsite_testing\\sele_spotifywebsite_testing\\test_notification-createnewpass_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|solutionrelative:sele_spotifywebsite_testing\\test_notification-createnewpass_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Test_LoginSpotify_Nam.cs",
-              "DocumentMoniker": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
-              "RelativeDocumentMoniker": "Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
-              "ToolTip": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
-              "RelativeToolTip": "Sele_SpotifyWebsite_Testing\\Test_LoginSpotify_Nam.cs",
-              "ViewState": "AQIAAHABAAAAAAAAAAAAAJABAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "Test_Notification-CreateNewPass_Nam.cs",
+              "DocumentMoniker": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_Notification-CreateNewPass_Nam.cs",
+              "RelativeDocumentMoniker": "Sele_SpotifyWebsite_Testing\\Test_Notification-CreateNewPass_Nam.cs",
+              "ToolTip": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_Notification-CreateNewPass_Nam.cs",
+              "RelativeToolTip": "Sele_SpotifyWebsite_Testing\\Test_Notification-CreateNewPass_Nam.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAIwG0AAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T15:18:59.954Z",
+              "WhenOpened": "2024-09-03T03:50:54.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test_SignupSpotify_Nam.cs",
+              "DocumentMoniker": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
+              "RelativeDocumentMoniker": "Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
+              "ToolTip": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
+              "RelativeToolTip": "Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAIA0wEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T09:49:42.8Z",
               "EditorCaption": ""
             }
           ]

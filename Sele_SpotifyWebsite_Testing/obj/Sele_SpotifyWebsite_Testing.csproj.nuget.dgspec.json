@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj": {}
+    "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj": {}
   },
   "projects": {
-    "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj": {
+    "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
+        "projectUniqueName": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
         "projectName": "Sele_SpotifyWebsite_Testing",
-        "projectPath": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
+        "projectPath": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "D:\\Test_SpotifyWebsite\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\obj\\",
+        "outputPath": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

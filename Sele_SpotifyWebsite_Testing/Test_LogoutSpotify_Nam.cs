@@ -29,8 +29,8 @@ namespace Sele_SpotifyWebsite_Testing
         {
             
             loginTest.DangNhapThanhCong_Spotify_Nam(); // Gọi hàm đăng nhập từ class Test_LoginSpotify_Nam
-           
-            dr_Spo_Nam.FindElement(By.CssSelector("#main > div.Root.centered-layout > div.ZQftYELq0aOsg6tPbVbV > div.jEMA2gVoLgPQqAFrPhFw > header > div.hV9v6y_uYwdAsoiOHpzk.contentSpacing > div.rwdnt1SmeRC_lhLVfIzg > button.Button-sc-1dqy6lx-0.kTFJuL.encore-text-body-medium-bold.encore-over-media-set.SFgYidQmrqrFEVh65Zrg")).Click();
+            Thread.Sleep(2000);
+            dr_Spo_Nam.FindElement(By.CssSelector("#main > div > div.ZQftYELq0aOsg6tPbVbV > div.wp7mZFPzV7Qmo51F0NA_ > div.VUXMMFKWudUWE1kIXZoS.rwdnt1SmeRC_lhLVfIzg > button.Button-sc-1dqy6lx-0.kTFJuL.encore-text-body-medium-bold.KAq2kDjXj2VS4eXrFL4i")).Click();
             Thread.Sleep(2000);
             dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"context-menu\"]/div/ul/li[5]")).Click();
             Thread.Sleep(2000);
@@ -39,8 +39,8 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-            Thread.Sleep(4000);
-            dr_Spo_Nam.Dispose();
+           Thread.Sleep(4000);
+           dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
 
         }
 
