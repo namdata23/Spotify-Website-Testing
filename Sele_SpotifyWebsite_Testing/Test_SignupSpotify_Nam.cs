@@ -1,9 +1,11 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Sele_SpotifyWebsite_Testing
 {
@@ -26,7 +28,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             signupTest.TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt vì trang mặc định ngôn ngữ là tiếng anh
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3000);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -34,9 +36,7 @@ namespace Sele_SpotifyWebsite_Testing
             element.Click();
             Thread.Sleep(2000);
             //Bấm vào nút button đăng ký
-            dr_Spo_Nam.FindElement(By.CssSelector("#main > div > div.ZQftYELq0aOsg6tPbVbV > div.jEMA2gVoLgPQqAFrPhFw > header > div.hV9v6y_uYwdAsoiOHpzk.contentSpacing " +
-                                                  "> div.rwdnt1SmeRC_lhLVfIzg > div.LKFFk88SIRC9QKKUWR5u > button.Button-sc-1dqy6lx-0.glbdel.encore-text-body-medium-bold.sibxBMlr_oxWTfBrEz2G"))
-                                                  .Click();
+            dr_Spo_Nam.FindElement(By.ClassName("glbdel")).Click();
             Thread.Sleep(2000);
 
             // Điền email vào -> Kịch bản 1 : Kiểm tra điền email đã đăng ký rồi để kiểm tra thông báo
@@ -52,7 +52,7 @@ namespace Sele_SpotifyWebsite_Testing
             IWebElement emailField = dr_Spo_Nam.FindElement(By.Id("username")); // xóa nội dung trước để kiểm thử kịch bản 2
             emailField.SendKeys(Keys.Control + "a");
             emailField.SendKeys(Keys.Delete);
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
 
             dr_Spo_Nam.FindElement(By.Id("username")).SendKeys("namitwork23gmail.com");
             dr_Spo_Nam.FindElement(By.ClassName("VsdHm")).Click();
@@ -62,9 +62,71 @@ namespace Sele_SpotifyWebsite_Testing
 
 
         }
-        [Test]
+
+        [Test]  
         public void DangKyThanhCong()
         {
+            
+            signupTest.TurnOffCookie();
+            //bấm chuyển đổi qua ngôn ngữ tiếng việt vì trang mặc định ngôn ngữ là tiếng anh
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
+            Thread.Sleep(3000);
+            IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
+            ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            Thread.Sleep(3000);
+            element.Click();
+            Thread.Sleep(2000);
+            //Bấm vào nút button đăng ký
+            dr_Spo_Nam.FindElement(By.ClassName("glbdel"))
+                                                  .Click();
+            Thread.Sleep(2500);
+
+            //điền thông tin email chưa dùng vào ô đăng ký của trang web
+            dr_Spo_Nam.FindElement(By.Id("username")).SendKeys("lucastihnys@gmail.com");
+            Thread.Sleep(2000);
+            //nhấn nút Next
+            dr_Spo_Nam.FindElement(By.ClassName("VsdHm")).Click();
+            Thread.Sleep(2500);
+            //điền vào ô tạo mật khẩu cho tài khoản
+            dr_Spo_Nam.FindElement(By.Name("new-password")).SendKeys("lucas12345");
+            Thread.Sleep(2000);
+            // nhấn Next để tiếp tục
+            dr_Spo_Nam.FindElement(By.ClassName("VsdHm")).Click();
+            //điền vào ô đặt tên trong hồ sơ của mình
+            Thread.Sleep(2500);
+            dr_Spo_Nam.FindElement(By.CssSelector("input[id='displayName']")).SendKeys("lucas");
+            //điền vào ô ngày sinh, chọn tháng, điền vào ô năm sinh
+            Thread.Sleep(2500);
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[1]")).SendKeys("12");
+            Thread.Sleep(2500);
+            // Tìm dropdown tháng
+            IWebElement monthDropdown = dr_Spo_Nam.FindElement(By.Id("month"));
+            monthDropdown.Click();
+            // Mở danh sách dropdown bằng JavaScript
+            IJavaScriptExecutor js = (IJavaScriptExecutor)dr_Spo_Nam;
+            js.ExecuteScript("arguments[0].click();", monthDropdown);
+
+            // Tạo đối tượng SelectElement để thao tác
+            SelectElement selectMonth = new SelectElement(monthDropdown);
+            Thread.Sleep(2500);
+            // Lấy giá trị value tương ứng với tháng (tháng 2)
+            selectMonth.SelectByValue("2");
+
+            Thread.Sleep(2500);
+            // điền năm
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[2]")).SendKeys("2002");
+            Thread.Sleep(2500);
+            // chọn giới tính
+            dr_Spo_Nam.FindElement(By.ClassName("jRuGOG")).Click();
+            Thread.Sleep(2500);
+            // nhấn Next để tiếp tục
+            dr_Spo_Nam.FindElement(By.ClassName("VsdHm")).Click();
+            Thread.Sleep(2500);
+            // Click vào điều kiện mà người dùng muốn 
+            dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"__next\"]/main/main/section/div/form/div[1]/div[2]/div/section/div[4]/div[1]/div/div/label/span[1]")).Click();
+            Thread.Sleep(1500);
+            // Nhấn vào nút Đăng ký
+            dr_Spo_Nam.FindElement(By.CssSelector("#__next > main > main > section > div > form > div.sc-blcnQh.gXAYSM > button")).Click();
 
         }
 
@@ -72,8 +134,8 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-          //  Thread.Sleep(4000);
-          //  dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
+           Thread.Sleep(4000);
+           dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
 
         }
 

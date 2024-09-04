@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2xkD+uFkuZyxX3JvymtPPdt8V1L2diwRXv6fIgq02iVECFx91MB2bIDPxWCHlmT+AjrnOLSEE95bPYGjAgl6DA==",
+  "dgSpecHash": "oghKLhvpzQJOnv2028T4tjKDAk/A8MqLPcw+9PPfBYRoLtBb/L3vRjcS9MAdWcq1Uwjp2427UNaVzp0CJ/SKFA==",
   "success": true,
   "projectFilePath": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\nunit\\3.14.0\\nunit.3.14.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\nunit.analyzers\\3.9.0\\nunit.analyzers.3.9.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\selenium.support\\4.20.0\\selenium.support.4.20.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\selenium.webdriver\\4.20.0\\selenium.webdriver.4.20.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\selenium.webdriver.chromedriver\\127.0.6533.9900\\selenium.webdriver.chromedriver.127.0.6533.9900.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.formats.asn1\\8.0.1\\system.formats.asn1.8.0.1.nupkg.sha512",

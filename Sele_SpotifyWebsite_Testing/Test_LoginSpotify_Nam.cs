@@ -60,7 +60,7 @@ namespace Sele_SpotifyWebsite_Testing
 
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -87,7 +87,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -119,9 +119,9 @@ namespace Sele_SpotifyWebsite_Testing
         [Test]
         public void DangNhapSaiEmail_Spotify_Nam()
         {
-            TurnOffCookie();
+            TurnOffCookie();                    
             //bấm chuyển đổi qua ngôn ngữ tiếng việt
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -154,7 +154,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -187,7 +187,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt vì trang mặc định ngôn ngữ là tiếng anh
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -233,7 +233,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt vì trang mặc định ngôn ngữ là tiếng anh
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -293,7 +293,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt vì trang mặc định ngôn ngữ là tiếng anh
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3500);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
@@ -335,7 +335,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             TurnOffCookie();
             //bấm chuyển đổi qua ngôn ngữ tiếng việt vì trang mặc định ngôn ngữ là tiếng anh
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[1]/nav/div[2]/div[2]/div[2]/button")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[2]/nav/div/div[2]/div[2]/button")).Click();
             Thread.Sleep(3000);
             IWebElement element = dr_Spo_Nam.FindElement(By.Id("vi"));
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
