@@ -74,7 +74,7 @@ namespace Sele_SpotifyWebsite_Testing
             // Điền lần lượt vào ô Email và ô Password đã đăng ký
             dr_Spo_Nam.FindElement(By.Id("login-username")).SendKeys("namitwork23@gmail.com");
             Thread.Sleep(2500);
-            dr_Spo_Nam.FindElement(By.Id("login-password")).SendKeys("N_am020305");
+            dr_Spo_Nam.FindElement(By.Id("login-password")).SendKeys("N_am020301");
             Thread.Sleep(3000);
             //Nhấn vào button Đăng nhập
             dr_Spo_Nam.FindElement(By.ClassName("Button-sc-qlcn5g-0")).Click();

@@ -60,7 +60,6 @@ namespace Sele_SpotifyWebsite_Testing
             IWebElement warnEmail2 = dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div/div/div/div[2]/div[1]"));
             Assert.AreEqual("This email is invalid. Make sure it's written like example@email.com", warnEmail2.Text);
 
-
         }
 
         [Test]  
@@ -82,39 +81,37 @@ namespace Sele_SpotifyWebsite_Testing
             Thread.Sleep(2500);
 
             //điền thông tin email chưa dùng vào ô đăng ký của trang web
-            dr_Spo_Nam.FindElement(By.Id("username")).SendKeys("lucastihnys@gmail.com");
+            dr_Spo_Nam.FindElement(By.Id("username")).SendKeys("zaachcafe@gmail.com");
             Thread.Sleep(2000);
             //nhấn nút Next
             dr_Spo_Nam.FindElement(By.ClassName("VsdHm")).Click();
             Thread.Sleep(2500);
             //điền vào ô tạo mật khẩu cho tài khoản
-            dr_Spo_Nam.FindElement(By.Name("new-password")).SendKeys("lucas12345");
+            dr_Spo_Nam.FindElement(By.Name("new-password")).SendKeys("cafe234455");
             Thread.Sleep(2000);
             // nhấn Next để tiếp tục
             dr_Spo_Nam.FindElement(By.ClassName("VsdHm")).Click();
             //điền vào ô đặt tên trong hồ sơ của mình
             Thread.Sleep(2500);
-            dr_Spo_Nam.FindElement(By.CssSelector("input[id='displayName']")).SendKeys("lucas");
+            dr_Spo_Nam.FindElement(By.CssSelector("input[id='displayName']")).SendKeys("caslos");
             //điền vào ô ngày sinh, chọn tháng, điền vào ô năm sinh
             Thread.Sleep(2500);
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[1]")).SendKeys("12");
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[1]")).SendKeys("5");
             Thread.Sleep(2500);
             // Tìm dropdown tháng
             IWebElement monthDropdown = dr_Spo_Nam.FindElement(By.Id("month"));
             monthDropdown.Click();
-            // Mở danh sách dropdown bằng JavaScript
-            IJavaScriptExecutor js = (IJavaScriptExecutor)dr_Spo_Nam;
-            js.ExecuteScript("arguments[0].click();", monthDropdown);
-
+            // Mở danh sách dropdown 
+            ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", monthDropdown);
             // Tạo đối tượng SelectElement để thao tác
-            SelectElement selectMonth = new SelectElement(monthDropdown);
-            Thread.Sleep(2500);
-            // Lấy giá trị value tương ứng với tháng (tháng 2)
-            selectMonth.SelectByValue("2");
+           SelectElement selectMonth = new SelectElement(monthDropdown);
+            Thread.Sleep(2000); 
+            // Lấy giá trị value tương ứng với tháng 
+            selectMonth.SelectByValue("4");
 
             Thread.Sleep(2500);
             // điền năm
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[2]")).SendKeys("2002");
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[2]")).SendKeys("2001");
             Thread.Sleep(2500);
             // chọn giới tính
             dr_Spo_Nam.FindElement(By.ClassName("jRuGOG")).Click();
@@ -126,7 +123,7 @@ namespace Sele_SpotifyWebsite_Testing
             dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"__next\"]/main/main/section/div/form/div[1]/div[2]/div/section/div[4]/div[1]/div/div/label/span[1]")).Click();
             Thread.Sleep(1500);
             // Nhấn vào nút Đăng ký
-            dr_Spo_Nam.FindElement(By.CssSelector("#__next > main > main > section > div > form > div.sc-blcnQh.gXAYSM > button")).Click();
+          //  dr_Spo_Nam.FindElement(By.CssSelector("#__next > main > main > section > div > form > div.sc-blcnQh.gXAYSM > button")).Click();
 
         }
 

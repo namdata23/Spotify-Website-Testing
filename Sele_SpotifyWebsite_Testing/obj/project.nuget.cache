@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oghKLhvpzQJOnv2028T4tjKDAk/A8MqLPcw+9PPfBYRoLtBb/L3vRjcS9MAdWcq1Uwjp2427UNaVzp0CJ/SKFA==",
+  "dgSpecHash": "FWkDjSICf7pBRWBSvB+gSO20GeXDCzqT7gn0U27zJK57Uy9CYaEsaiO675JDGzFf5BBSEZBpN8E/av7T3Yu2VA==",
   "success": true,
   "projectFilePath": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\mailkit\\4.7.1.1\\mailkit.4.7.1.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.net.test.sdk\\17.8.0\\microsoft.net.test.sdk.17.8.0.nupkg.sha512",

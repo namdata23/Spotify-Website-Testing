@@ -218,3 +218,4 @@ D:\Sele_SpotifyWebsite_Testing\Sele_SpotifyWebsite_Testing\obj\Debug\net8.0\Sele
 D:\Sele_SpotifyWebsite_Testing\Sele_SpotifyWebsite_Testing\obj\Debug\net8.0\Sele_SpotifyWebsite_Testing.genruntimeconfig.cache
 D:\Sele_SpotifyWebsite_Testing\Sele_SpotifyWebsite_Testing\obj\Debug\net8.0\ref\Sele_SpotifyWebsite_Testing.dll
 D:\Sele_SpotifyWebsite_Testing\Sele_SpotifyWebsite_Testing\bin\Debug\net8.0\WebDriver.Support.dll
+D:\Sele_SpotifyWebsite_Testing\Sele_SpotifyWebsite_Testing\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll

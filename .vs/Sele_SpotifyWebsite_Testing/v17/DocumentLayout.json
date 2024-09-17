@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Sele_SpotifyWebsite_Testing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|d:\\sele_spotifywebsite_testing\\sele_spotifywebsite_testing\\test_signupspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|solutionrelative:sele_spotifywebsite_testing\\test_signupspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|d:\\sele_spotifywebsite_testing\\sele_spotifywebsite_testing\\test_searchspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8177E8-0C59-48F4-8704-CAC3E5850933}|Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj|solutionrelative:sele_spotifywebsite_testing\\test_searchspotify_nam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Test_SignupSpotify_Nam.cs",
-              "DocumentMoniker": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
-              "RelativeDocumentMoniker": "Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
-              "ToolTip": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
-              "RelativeToolTip": "Sele_SpotifyWebsite_Testing\\Test_SignupSpotify_Nam.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAAAIQAAAAAAAAA",
+              "Title": "Test_SearchSpotify_Nam.cs",
+              "DocumentMoniker": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_SearchSpotify_Nam.cs",
+              "RelativeDocumentMoniker": "Sele_SpotifyWebsite_Testing\\Test_SearchSpotify_Nam.cs",
+              "ToolTip": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Test_SearchSpotify_Nam.cs",
+              "RelativeToolTip": "Sele_SpotifyWebsite_Testing\\Test_SearchSpotify_Nam.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA1wCcAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T09:49:42.8Z",
+              "WhenOpened": "2024-09-17T09:52:15.301Z",
               "EditorCaption": ""
             }
           ]
