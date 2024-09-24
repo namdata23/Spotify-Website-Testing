@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FWkDjSICf7pBRWBSvB+gSO20GeXDCzqT7gn0U27zJK57Uy9CYaEsaiO675JDGzFf5BBSEZBpN8E/av7T3Yu2VA==",
+  "dgSpecHash": "MM0V9myKFaPOMKVWV6GK9T2yJKl62SDVD2XAtD5Z0IfwlYrBNvZ1RbSofNpBFIZcfAG+8uGrul3wGOqMEnJFpg==",
   "success": true,
   "projectFilePath": "D:\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing\\Sele_SpotifyWebsite_Testing.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\selenium.support\\4.20.0\\selenium.support.4.20.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\selenium.webdriver\\4.20.0\\selenium.webdriver.4.20.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\selenium.webdriver.chromedriver\\127.0.6533.9900\\selenium.webdriver.chromedriver.127.0.6533.9900.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\selenium.webdriver.chromedriver\\128.0.6613.8400\\selenium.webdriver.chromedriver.128.0.6613.8400.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.formats.asn1\\8.0.1\\system.formats.asn1.8.0.1.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\system.security.cryptography.pkcs.8.0.0.nupkg.sha512"

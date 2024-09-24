@@ -66,19 +66,19 @@ namespace Sele_SpotifyWebsite_Testing
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
             Thread.Sleep(3000);
             element.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2500);
 
             //Bấm vào nút button đăng nhập 
             dr_Spo_Nam.FindElement(By.CssSelector("[data-testid='login-button']")).Click();
-            Thread.Sleep(2500);
+            Thread.Sleep(2000);
             // Điền lần lượt vào ô Email và ô Password đã đăng ký
             dr_Spo_Nam.FindElement(By.Id("login-username")).SendKeys("namitwork23@gmail.com");
-            Thread.Sleep(2500);
+            Thread.Sleep(2000);
             dr_Spo_Nam.FindElement(By.Id("login-password")).SendKeys("N_am020301");
-            Thread.Sleep(3000);
+            Thread.Sleep(2500);
             //Nhấn vào button Đăng nhập
             dr_Spo_Nam.FindElement(By.ClassName("Button-sc-qlcn5g-0")).Click();
-            Thread.Sleep(3500);
+            Thread.Sleep(3000);
 
         }
         
