@@ -254,7 +254,7 @@ namespace Sele_SpotifyWebsite_Testing
             SwitchToGridView();
             Thread.Sleep(1500);
             //check đổi giao diện qua lại
-            //SwitchToListView();
+            // SwitchToListView();
 
             // Chọn 1 album click vào 
             dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[4]/div[1]/div[2]/div[2]/div/main/section/section/div/div[2]/div[8]/div[1]")).Click();
@@ -394,8 +394,8 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-            //Thread.Sleep(4000);
-            //dr_Spo_Nam.Dispose();
+            Thread.Sleep(4000);
+            dr_Spo_Nam.Dispose();
 
         }
 
