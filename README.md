@@ -114,8 +114,8 @@ Kiểm tra tốc độ tải trang và thời gian phản hồi của trang web 
 
 ### 2. Kiểm thử hiệu năng và API
 - Cài đặt **JMeter** và mở các file kịch bản:
-  - `performance_test.jmx`: Kiểm thử hiệu năng.
-  - `api_test.jmx`: Kiểm thử API.
+  -  Kiểm thử hiệu năng.
+  -  Kiểm thử API.
 
 ---
 
