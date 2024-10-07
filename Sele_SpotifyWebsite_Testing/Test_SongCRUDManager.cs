@@ -30,7 +30,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             crud_song.DangNhapThanhCong_Spotify_Nam();
             Thread.Sleep(2000);
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
+           // dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
 
 
             // Tìm phần tử trong thanh tìm kiếm (ví dụ một bài hát hoặc nút tạo danh sách phát)
@@ -278,8 +278,8 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-           // Thread.Sleep(2500);
-          //  dr_Spo_Nam.Dispose();
+            Thread.Sleep(2500);
+            dr_Spo_Nam.Dispose();
 
         }
     }
