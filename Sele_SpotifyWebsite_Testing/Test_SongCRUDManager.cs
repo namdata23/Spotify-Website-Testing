@@ -278,8 +278,8 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-           // Thread.Sleep(4000);
-            //dr_Spo_Nam.Dispose();
+            Thread.Sleep(2500);
+            dr_Spo_Nam.Dispose();
 
         }
     }

@@ -32,7 +32,7 @@ namespace Sele_SpotifyWebsite_Testing
             search_Spotify.DangNhapThanhCong_Spotify_Nam();
             Thread.Sleep(1500);
 
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
+            //dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
 
             // điền nội dung vào ô tìm kiếm
             IWebElement search_music = dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[1]/div[2]/div/span/div/form/div[2]/input"));
@@ -86,7 +86,7 @@ namespace Sele_SpotifyWebsite_Testing
             search_Spotify.DangNhapThanhCong_Spotify_Nam();
             Thread.Sleep(2000);
 
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
+           // dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
             // điền nội dung vào ô tìm kiếm
             IWebElement search_music = dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[1]/div[2]/div/span/div/form/div[2]/input"));
             search_music.Click();
@@ -182,7 +182,7 @@ namespace Sele_SpotifyWebsite_Testing
         {
             search_Spotify.DangNhapThanhCong_Spotify_Nam();
             Thread.Sleep(2000);
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
+           // dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[11]/div/div/div/div/button")).Click();
 
             IWebElement search_music = dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"main\"]/div/div[2]/div[1]/div[2]/div/span/div/form/div[2]/input"));
             search_music.SendKeys("Love way");
@@ -254,7 +254,7 @@ namespace Sele_SpotifyWebsite_Testing
             SwitchToGridView();
             Thread.Sleep(1500);
             //check đổi giao diện qua lại
-            // SwitchToListView();
+            //SwitchToListView();
 
             // Chọn 1 album click vào 
             dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[4]/div[1]/div[2]/div[2]/div/main/section/section/div/div[2]/div[8]/div[1]")).Click();
@@ -316,16 +316,16 @@ namespace Sele_SpotifyWebsite_Testing
             shuffle_button.Click();// click thêm lần nữa để tắt chế độ trộn bài
 
 
-            WebDriverWait wait_message = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(10));
-            //click ô bỏ qua thông báo
-            IWebElement checkbox = wait_message.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("span.Indicator-sc-1airx73-0.bftgqn")));
+            //WebDriverWait wait_message = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(10));
+            ////click ô bỏ qua thông báo
+            //IWebElement checkbox = wait_message.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("span.Indicator-sc-1airx73-0.bftgqn")));
 
-            // Click vào ô tích
-            checkbox.Click();
-            Thread.Sleep(1500);
+            //// Click vào ô tích
+            //checkbox.Click();
+            //Thread.Sleep(1500);
 
-            // Bấm nút "Bỏ qua" xuất hiện
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[3]/footer/div[1]/div[3]/div/div[5]/div/div[1]/div/div/div[2]/div[2]/button")).Click();
+            //// Bấm nút "Bỏ qua" xuất hiện
+            //dr_Spo_Nam.FindElement(By.XPath("/html/body/div[5]/div/div[2]/div[3]/footer/div[1]/div[3]/div/div[5]/div/div[1]/div/div/div[2]/div[2]/button")).Click();
 
             Thread.Sleep(1700);
             //kiểm tra phần chế độ xem : gồm bài hát đang phát và xem thông tin tác giả có trùng với thanh đang phát nhạc hay không
@@ -394,7 +394,7 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-            Thread.Sleep(4000);
+            Thread.Sleep(2500);
             dr_Spo_Nam.Dispose();
 
         }

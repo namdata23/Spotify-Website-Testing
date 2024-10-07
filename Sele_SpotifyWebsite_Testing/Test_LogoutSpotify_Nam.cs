@@ -39,7 +39,7 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-           Thread.Sleep(4000);
+           Thread.Sleep(2500);
            dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
 
         }

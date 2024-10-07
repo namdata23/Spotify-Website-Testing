@@ -36,7 +36,7 @@ namespace Sele_SpotifyWebsite_Testing
             element.Click();
             Thread.Sleep(2000);
             //Bấm vào nút button đăng ký
-            dr_Spo_Nam.FindElement(By.ClassName("glbdel")).Click();
+            dr_Spo_Nam.FindElement(By.CssSelector("button[data-testid='signup-button']")).Click();
             Thread.Sleep(2000);
 
             // Điền email vào -> Kịch bản 1 : Kiểm tra điền email đã đăng ký rồi để kiểm tra thông báo
@@ -76,8 +76,7 @@ namespace Sele_SpotifyWebsite_Testing
             element.Click();
             Thread.Sleep(2000);
             //Bấm vào nút button đăng ký
-            dr_Spo_Nam.FindElement(By.ClassName("glbdel"))
-                                                  .Click();
+            dr_Spo_Nam.FindElement(By.CssSelector("button[data-testid='signup-button']")).Click();
             Thread.Sleep(2500);
 
             //điền thông tin email chưa dùng vào ô đăng ký của trang web
@@ -107,11 +106,11 @@ namespace Sele_SpotifyWebsite_Testing
            SelectElement selectMonth = new SelectElement(monthDropdown);
             Thread.Sleep(2000); 
             // Lấy giá trị value tương ứng với tháng 
-            selectMonth.SelectByValue("4");
+            selectMonth.SelectByValue("5");
 
             Thread.Sleep(2500);
             // điền năm
-            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[2]")).SendKeys("2001");
+            dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/main/main/section/div/form/div[1]/div[2]/div/section/div[3]/div[2]/div[2]/div/input[2]")).SendKeys("2000");
             Thread.Sleep(2500);
             // chọn giới tính
             dr_Spo_Nam.FindElement(By.ClassName("jRuGOG")).Click();
@@ -131,7 +130,7 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-           Thread.Sleep(4000);
+           Thread.Sleep(2500);
            dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
 
         }

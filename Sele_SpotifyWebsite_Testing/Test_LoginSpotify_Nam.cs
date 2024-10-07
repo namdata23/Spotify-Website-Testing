@@ -11,6 +11,7 @@ using MailKit.Net.Imap;
 using MailKit;
 using MimeKit;
 using NUnit.Framework.Internal;
+using System.Numerics;
 
 
 namespace Sele_SpotifyWebsite_Testing
@@ -219,8 +220,8 @@ namespace Sele_SpotifyWebsite_Testing
             dr_Spo_Nam.FindElement(By.ClassName("Button-sc-qlcn5g-0")).Click();
 
             // Chờ và kiểm tra thông báo lỗi
-            WebDriverWait wait_warning = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(10));
-            IWebElement errorMessageElement = wait_warning.Until(driver => driver.FindElement(By.XPath("/html/body/div[1]/div/div" +
+            WebDriverWait wait_warning = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(3));
+            IWebElement errorMessageElement = wait_warning.Until(dr_Spo_Nam => dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/div/div" +
                                                                                               "/div/div/div[2]/div[1]/div[2]")));
 
             // Kiểm tra nếu thông báo lỗi xuất hiện
@@ -265,9 +266,8 @@ namespace Sele_SpotifyWebsite_Testing
             dr_Spo_Nam.FindElement(By.ClassName("Button-sc-qlcn5g-0")).Click();
 
             // Chờ và kiểm tra thông báo lỗi
-            WebDriverWait wait_warning = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(10));
-            IWebElement errorMessageElement = wait_warning.Until(driver => driver.FindElement(By.XPath("/html/body/div[1]/div/div/div/div" +
-                                                                                                       "/div[2]/div[2]/div[3]")));
+            WebDriverWait wait_warning = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(3));
+            IWebElement errorMessageElement = wait_warning.Until(dr_Spo_Nam => dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/div/div/div/div/div[2]/div[1]/div[2]/div[3]")));
 
             // Kiểm tra nếu thông báo lỗi xuất hiện
             Assert.IsTrue(errorMessageElement.Displayed, "Thông báo 'Please enter your password.' Không xuất hiện !.");
@@ -299,7 +299,7 @@ namespace Sele_SpotifyWebsite_Testing
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
             Thread.Sleep(3500);
             element.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2500);
 
             //Bấm vào nút button đăng nhập 
             dr_Spo_Nam.FindElement(By.CssSelector("[data-testid='login-button']")).Click();
@@ -307,23 +307,22 @@ namespace Sele_SpotifyWebsite_Testing
             // Xóa nội dung cả hai trường Email và Password
             IWebElement emailField = dr_Spo_Nam.FindElement(By.Id("login-username"));
             IWebElement passField = dr_Spo_Nam.FindElement(By.Id("login-password"));
-            ClearField(emailField, "temp@example.com");
+            ClearField(emailField, "temp@example.com"); 
             ClearField(passField, "pass_temp");
 
             //Nhấn vào button Đăng nhập
             dr_Spo_Nam.FindElement(By.ClassName("Button-sc-qlcn5g-0")).Click();
-            // Chờ và kiểm tra thông báo lỗi
-            WebDriverWait wait_warning1 = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(10));
-            IWebElement errorMessageElement1 = wait_warning1.Until(driver => driver.FindElement(By.XPath("/html/body/div[1]/div/div" +
-                                                                                              "/div/div/div[2]/div[1]/div[2]")));
+            // kiểm tra thông báo lỗi
+            IWebElement errorMessageElement1 = dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"username-error\"]"));
+            Assert.AreEqual("Please enter your Spotify username or email address.", errorMessageElement1.Text);
 
-            WebDriverWait wait_warning2 = new WebDriverWait(dr_Spo_Nam, TimeSpan.FromSeconds(10));
-            IWebElement errorMessageElement2 = wait_warning2.Until(driver => driver.FindElement(By.XPath("/html/body/div[1]/div/div/div/div" +
-                                                                                                     "/div[2]/div[2]/div[3]")));
+            
 
-            // Kiểm tra nếu thông báo lỗi xuất hiện
-            Assert.IsTrue(errorMessageElement1.Displayed, "Thông báo 'Please enter your Spotify username or email address.' Không xuất hiện !.");
-            Assert.IsTrue(errorMessageElement2.Displayed, "Thông báo 'Please enter your password.' Không xuất hiện !.");
+            IWebElement errorMessageElement2 = dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"password-error\"]"));
+            Assert.AreEqual("Please enter your password.", errorMessageElement2.Text);
+
+
+
 
         }
 
@@ -341,7 +340,7 @@ namespace Sele_SpotifyWebsite_Testing
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
             Thread.Sleep(3000);
             element.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2500);
 
             //Bấm vào nút button đăng nhập 
             dr_Spo_Nam.FindElement(By.CssSelector("[data-testid='login-button']")).Click();
@@ -386,10 +385,10 @@ namespace Sele_SpotifyWebsite_Testing
             Thread.Sleep(3500);
 
             //Điền thông tin password mới
-            dr_Spo_Nam.FindElement(By.Name("new_password")).SendKeys("N_am020305");
+            dr_Spo_Nam.FindElement(By.Name("new_password")).SendKeys("N_am050501");
             Thread.Sleep(2500);
             // Xác nhận lại password mới nhập
-            dr_Spo_Nam.FindElement(By.CssSelector("#confirm_password")).SendKeys("N_am020305");
+            dr_Spo_Nam.FindElement(By.CssSelector("#confirm_password")).SendKeys("N_am050501");
             Thread.Sleep(2500);
             //nhấn nút tạo password
             dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/div/main/section/div/form/button")).Click();
@@ -407,7 +406,7 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-            Thread.Sleep(4000);
+            Thread.Sleep(2500);
             dr_Spo_Nam.Dispose();
 
         }

@@ -33,7 +33,7 @@ namespace Sele_SpotifyWebsite_Testing
             ((IJavaScriptExecutor)dr_Spo_Nam).ExecuteScript("arguments[0].scrollIntoView(true);", element);
             Thread.Sleep(3000);
             element.Click();
-            Thread.Sleep(3000);
+            Thread.Sleep(2500);
 
             //Bấm vào nút button đăng nhập 
             dr_Spo_Nam.FindElement(By.CssSelector("[data-testid='login-button']")).Click();
@@ -127,7 +127,7 @@ namespace Sele_SpotifyWebsite_Testing
             IWebElement errorMsg3 = dr_Spo_Nam.FindElement(By.XPath("/html/body/div[1]/div/main/section/div/form/div[1]/div[2]/ul/li[3]"));
             Assert.AreEqual("1 number or special character (example: # ? ! &)\r\nNot met", errorMsg3.Text);
 
-            ////Kịch bản 4 : Đồng bộ giữa nội dung điền ô mật khẩu và ô xác nhận có trùng khớp
+            //Kịch bản 4 : Đồng bộ giữa nội dung điền ô mật khẩu và ô xác nhận có trùng khớp
             dr_Spo_Nam.FindElement(By.Name("new_password")).Clear(); // Xóa nội dung trước
             Thread.Sleep(2000);
             dr_Spo_Nam.FindElement(By.Name("new_password")).SendKeys("N_am020305");
@@ -146,7 +146,7 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-            Thread.Sleep(4000);
+            Thread.Sleep(2500);
             dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
 
         }

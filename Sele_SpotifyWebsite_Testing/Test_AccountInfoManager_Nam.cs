@@ -256,7 +256,7 @@ namespace Sele_SpotifyWebsite_Testing
             // Sử dụng Select để chọn giá trị
             SelectElement selectGender = new SelectElement(genderDropdown);
 
-            // Chọn giới tính "Nam"
+            // Chọn giới tính 
             selectGender.SelectByValue("FEMALE");
             Thread.Sleep(1000);
             // điền ngày sinh
@@ -278,10 +278,10 @@ namespace Sele_SpotifyWebsite_Testing
 
             // Tạo đối tượng SelectElement để thao tác
             SelectElement selectMonth = new SelectElement(monthDropdown);
-            Thread.Sleep(2000);
+            Thread.Sleep(1500);
 
-            // Lấy giá trị value tương ứng với tháng 5
-            selectMonth.SelectByValue("may");
+            // Lấy giá trị value tương ứng với tháng 
+            selectMonth.SelectByValue("october");
 
             Thread.Sleep(2000);
             // điền năm
@@ -340,13 +340,13 @@ namespace Sele_SpotifyWebsite_Testing
             dr_Spo_Nam.FindElement(By.LinkText("Đổi mật khẩu")).Click();
             Thread.Sleep(2000);
 
-            //Kịch bản 1 : Kiểm tra các thông báo ở mục đổi mật khẩu
+            //Kịch bản : Kiểm tra các thông báo ở mục đổi mật khẩu
             
             // điền mật khẩu hiện tại
             IWebElement password_now = dr_Spo_Nam.FindElement(By.Name("old_password"));
             password_now.Click();
             Thread.Sleep(1500);
-            password_now.SendKeys("N_am020305");
+            password_now.SendKeys("N_am020301");
             Thread.Sleep(2000);
             //điển mật khẩu mới
             IWebElement password_new = dr_Spo_Nam.FindElement(By.Id("new_password"));
@@ -411,7 +411,7 @@ namespace Sele_SpotifyWebsite_Testing
 
             string expectedMessage3 = "Rất tiếc, mật khẩu không chính xác";
             Assert.AreEqual(expectedMessage3, warningMessage3.Text, "Cảnh báo không khớp với thông báo mong đợi.");
-          
+
 
         }
 
@@ -460,7 +460,7 @@ namespace Sele_SpotifyWebsite_Testing
             IWebElement password_now = dr_Spo_Nam.FindElement(By.Name("old_password"));
             password_now.Click();
             Thread.Sleep(1500);
-            password_now.SendKeys("N_am020305");
+            password_now.SendKeys("N_am020301");
             Thread.Sleep(2000);
             //điển mật khẩu mới
             IWebElement password_new = dr_Spo_Nam.FindElement(By.Id("new_password"));
@@ -520,7 +520,7 @@ namespace Sele_SpotifyWebsite_Testing
             dr_Spo_Nam.FindElement(By.LinkText("Khôi phục danh sách phát")).Click();
             Thread.Sleep(1500);
             //chọn mục nào muốn khôi phục
-            dr_Spo_Nam.FindElement(By.CssSelector("button[data-testid='playlist-restore']")).Click();
+            dr_Spo_Nam.FindElement(By.XPath("//*[@id=\"__next\"]/div[1]/div/div[2]/div[2]/section/div/table/tbody/tr[77]/td[4]/button")).Click();
             Thread.Sleep(1500);
             //click vào biểu tưởng Spotify để về trang chủ để xem nó được khôi phục hay chưa
             dr_Spo_Nam.FindElement(By.ClassName("mh-header-primary")).Click();
@@ -533,8 +533,8 @@ namespace Sele_SpotifyWebsite_Testing
         [TearDown]
         public void TearDown()
         {
-            Thread.Sleep(4000);
-            dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
+           Thread.Sleep(2500);
+           dr_Spo_Nam.Dispose(); // giúp đóng trình duyệt sau mỗi lần trường hợp kiểm thử hoành thành
 
         }
 
